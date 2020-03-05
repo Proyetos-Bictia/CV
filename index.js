@@ -22,4 +22,8 @@ app.route('/estudios').get( (req,res) => {
     res.sendFile(`${files}/estudios.html`)
 } )
 
+app.route('/contacto').get( (req,res) => {
+    res.sendFile(`${files}/contacto.html`)
+} )
+
 app.listen(3000);
