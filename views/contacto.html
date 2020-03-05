@@ -41,23 +41,23 @@
                 <img src="/images/chris.jpg" alt="esta es una imagen">
             </figure>
             <div class="card-body">
-                <form>
+                <form method="POST">
                     <div class="form-group">
                         <label for="exampleInputEmail1">Correo electronico</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="Email"
+                        <input type="email" class="form-control" name="email" id="exampleInputEmail1" aria-describedby="Email"
                             placeholder="Enter email">
                     </div>
                     <div class="form-group">
                         <label for="exampleInputPassword1">Celular</label>
-                        <input type="number" class="form-control" id="exampleInputPassword1"
+                        <input type="number" class="form-control" name="phone" id="exampleInputPassword1"
                             placeholder="Numero celular">
                     </div>
                     <div class="form-group">
                         <label for="menssage">Mensaje</label>
-                        <textarea class="form-control" name="menssage" id="menssage" cols="5" rows="5"></textarea>
+                        <textarea class="form-control" name="message" id="menssage" cols="5" rows="5"></textarea>
                     </div>
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+                    <button type="submit" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
                         Enviar
                     </button>
                 </form>
