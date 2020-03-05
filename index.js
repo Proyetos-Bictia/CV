@@ -31,9 +31,6 @@ app.route('/contacto').get( (req,res) => {
 } )
 
 app.route('/contacto').post( (req,res) => {
-    console.log('entramos en post');
-    let email = req.body.email;
-    console.log('esto es body => ', req.body);
     res.status(200).send({
         'email': req.body.email,
         'numero': req.body.phone,
